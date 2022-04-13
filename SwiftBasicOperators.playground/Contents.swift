@@ -111,3 +111,35 @@ for i in fruits[..<2]{
 let marksRange = ...98
 marksRange.contains(78)
 marksRange.contains(100)
+
+/*
+Logical Operator:
+
+ Logical Not( !a )
+ Logical AND( && )
+ Logical OR( || )
+
+ */
+
+//Combining Logical Operators
+let enteredDoorCode = true
+let passedRetinaScan = false
+let hasDoorKey = false
+let knowsOverridePassword = true
+
+print("\n")
+if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+
+//Explicit Parentheses
+//It’s sometimes useful to include parentheses when they’re not strictly needed, to make the intention of a complex expression easier to read. In the door access example above, it’s useful to add parentheses around the first part of the compound expression to make its intent explicit:
+
+print("\n")
+if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
